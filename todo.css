@@ -13,10 +13,9 @@ body {
 
 .container {
   box-shadow: 2px 2px 5px #696969;
-  width: 30%;
   background-color: #ffffff;
+  width: 400px;
 }
-
 
 ul {
   list-style-type: none;
@@ -27,14 +26,11 @@ ul {
 }
 
 li {
-  /*display: flex;
+  display: flex;
   justify-content: space-between;
-  align-items: center;*/
+  align-items: center;
   min-height: 40px;
   border-bottom: 1px solid #d3d3d3;
-  overflow: visible;
-  text-align: left;
-  line-height: 40px;
 }
 
 #todo-input {
@@ -47,13 +43,11 @@ li {
 
 input[type='checkbox'] {
   min-width: 25px;
-	height: 25px;
+  height: 25px;
   border: 0.1px solid grey;
-	border-radius: 100%;
+  border-radius: 100%;
   -webkit-appearance: none;
   appearance: none;
-  float: left;
-  margin-top: 7px;
 }
 
 input[type='checkbox']:checked {
@@ -64,11 +58,11 @@ input[type='checkbox']:checked {
   word-break: break-all;
   float: left;
   padding-left: 7px;
+  padding-right: 5px;
 }
 
 .delete {
   cursor: pointer;
-  float: right;
   margin-right: 5px;
 }
 
@@ -78,4 +72,24 @@ input[type='checkbox']:checked {
 
 .completed .todo-text{
   text-decoration: line-through;
+}
+
+#footer {
+  height: 30px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  color: grey;
+}
+
+#all-button, #active-button, #completed-button {
+  display: flex;
+  align-items: center;
+}
+
+.selected {
+  padding-right: 3px;
+  padding-left: 3px;
+  border: 1px solid grey;
+  border-radius: 30%;
 }
