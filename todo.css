@@ -48,6 +48,7 @@ input[type='checkbox'] {
   border-radius: 100%;
   -webkit-appearance: none;
   appearance: none;
+  outline: none;
 }
 
 input[type='checkbox']:checked {
