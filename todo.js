@@ -161,7 +161,7 @@ let updateList = () => {
     }
     else {
       completedButton.classList.toggle('selected');
-      changeDisplay('active', 'none');
+      changeDisplay('active', '');
     }
   }
 
